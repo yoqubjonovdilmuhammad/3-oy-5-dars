@@ -1,0 +1,271 @@
+@import "./global.css";
+
+.all__main {
+  background-color: var(--peach);
+}
+.main__container {
+  height: 640px;
+  margin-bottom: 16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 10rem;
+  overflow: hidden;
+}
+.main__left {
+  margin-left: 60px;
+  position: absolute;
+  width: 540px;
+  z-index: 2;
+}
+.main__left h1 {
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+.main__left p {
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+.oval {
+  position: absolute;
+  margin-left: 471px;
+  z-index: 1;
+}
+.main__right {
+  right: -79px;
+  bottom: -240px;
+  position: absolute;
+  z-index: 3;
+  box-shadow: none;
+}
+.main__right img {
+  width: 600px;
+  height: 900px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__container {
+    padding-left: 0;
+    padding-top: 6rem;
+    width: 100%;
+    height: 843px;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+  }
+  .main__left {
+    max-width: 573px;
+    width: 100%;
+  }
+  .main__right {
+    bottom: 5px;
+    left: 80px;
+    max-width: 284px;
+    max-height: 573px;
+  }
+
+  .oval {
+    top: 101px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .all__main {
+    margin-top: 34px;
+  }
+  .main__container {
+    padding-top: 80px;
+    margin-bottom: 120px;
+  }
+  .main__left {
+    max-width: 327px;
+    width: 100%;
+  }
+  .main__left h1 {
+    font-size: 3.2rem;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+  .main__left p {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  .main__right {
+    left: -22px;
+  }
+  .oval {
+    top: 102px;
+  }
+}
+
+/* DESIGN START */
+.design {
+  margin-bottom: 160px;
+}
+.design__container {
+  display: flex;
+  gap: 3rem;
+}
+.web__design-page {
+  position: relative;
+}
+.web__design-page img {
+  position: absolute;
+  filter: brightness(50%);
+  border-radius: 14px;
+  transition: var(--transition);
+}
+.web__design-page img:hover {
+  filter: brightness(90%);
+}
+
+.design__title {
+  position: absolute;
+  color: #fff;
+  top: 270px;
+  left: 90px;
+  text-align: center;
+}
+.design__title h3 {
+  width: 366px;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.design__title a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  transition: var(--transition);
+}
+.design__title a:hover {
+  color: var(--peach);
+}
+
+.span {
+  margin-left: 21px;
+  color: var(--peach);
+}
+
+.design__right {
+  margin-left: 530px;
+}
+.app__design-page {
+  margin-left: auto;
+  position: relative;
+}
+.app__design-page img {
+  position: absolute;
+  filter: brightness(50%);
+  border-radius: 14px;
+  transition: var(--transition);
+}
+.app__design-page img:hover {
+  filter: brightness(90%);
+}
+.design__titles {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  top: 107px;
+  left: 100px;
+}
+
+
+.design__titles h3 {
+  width: 406px;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.design__titles a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  transition: var(--transition);
+}
+.design__titles a:hover {
+  color: var(--peach);
+}
+
+.span {
+  margin-left: 21px;
+  color: var(--peach);
+}
+.graphic__design {
+  margin-top: 300px;
+  position: relative;
+}
+.web__tablet {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .design__container {
+    flex-wrap: wrap;
+  }
+  .web__tablet {
+    display: block;
+  }
+  .web__desktop {
+    display: none;
+  }
+}
+
+.info {
+  margin-top: 400px;
+  margin-bottom: 160px;
+}
+.info__container {
+  display: flex;
+  gap: 3rem;
+}
+.info__block {
+  text-align: center;
+}
+.info__block img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4.8rem;
+}
+.info__block h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: var(--black-grey);
+  margin-bottom: 3.2rem;
+}
+@media screen and (max-width: 768px) {
+  .info {
+    margin-bottom: 6.7rem;
+  }
+  .info__container {
+    flex-wrap: wrap;
+  }
+  .info__block {
+    display: flex;
+    gap: 4.8rem;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 576px) {
+  .info__block {
+    display: block;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+  .info__block h3 {
+    margin-bottom: 2.7rem;
+  }
+}
+

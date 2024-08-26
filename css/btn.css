@@ -1,0 +1,36 @@
+.dark__btn {
+  padding: 16px 26px 14px 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: var(--black-grey);
+  transition: var(--transition);
+  letter-spacing: 1px;
+}
+
+.dark__btn a {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.dark__btn:hover {
+  background-color: var(--light-peach);
+  color: white;
+}
+.light__btn {
+  padding: 16px 26px 14px 25px;
+  background-color: var(--peach);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: var(--transition);
+}
+
+.light__btn a {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.light__btn:hover {
+  background-color: var(--light-peach);
+  color: white;
+}

@@ -1,0 +1,96 @@
+@import "./global.css";
+
+.main {
+  margin-top: 64px;
+}
+.main__container {
+}
+.first__map {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+.main__left {
+  background-color: #fdf3f0;
+  border-radius: 16px;
+  padding: 88px 95px;
+  width: 730px;
+}
+.main__left h2 {
+  font-weight: 500;
+  font-size: 4rem;
+  color: var(--peach);
+  margin-bottom: 2.4rem;
+}
+.all__main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.first__main {
+  width: 255px;
+}
+.first__main h3 {
+  font-weight: 700;
+}
+.first__main a {
+  display: block;
+  color: var(--black-grey);
+}
+.main__right img {
+  border-radius: 10px;
+}
+.canada__tablet {
+  display: none;
+}
+.australiya__tablet {
+  display: none;
+}
+.uk__tablet {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main__container {
+  }
+  .first__map {
+    flex-direction: column-reverse;
+  }
+  .canada__tablet {
+    display: block;
+  }
+  .canada__desktop {
+    display: none;
+  }
+
+  .main__left {
+    margin-top: 3.1rem;
+    max-width: 689px;
+  }
+  .australiya__map {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main__container {
+    margin-top: 0px;
+  }
+  .canada__tablet {
+    width: 375px;
+    height: 320px;
+  }
+  .main__left {
+    margin-top: 0px;
+    max-width: 375px;
+    text-align: center;
+    padding:8rem 2.4rem;
+  }
+  .all__main{
+    flex-wrap: wrap;
+
+  }
+  .first__main{
+    width: 327px;
+  }
+}
